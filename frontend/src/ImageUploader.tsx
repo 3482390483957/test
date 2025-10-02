@@ -20,7 +20,7 @@ export default function ImageUploader() {
     formData.append("file", image);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/convert", {
+      const response = await fetch("https://test-n2mi.onrender.com", {
         method: "POST",
         body: formData,
       });
